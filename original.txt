@@ -12,8 +12,7 @@
     }
     body{
         
-        background-image: url("./cas.jpg");
-        background-size: 100%;
+        background-image: url("./qiu.jpg");
     }
     .contenedor {
         margin: auto;
@@ -36,18 +35,18 @@
     p.p1 {
         position: absolute;
         top: 400px;
-        left: 1400px;
+        left: 500px;
         width: 100px;
     }
     p.p2{
         position: absolute;
         top: 400px;
-        left: 1000px;
+        left: 800px;
         width: 100px;
     }
     #si {
         background: #515050;
-        left: 1000px;position: absolute;
+        left: 420px;position: absolute;
         top: 122px;
         width: 550px;
         color: #ffffff;
@@ -72,14 +71,14 @@ function dijoSi(){
 <body>
 <div class="contenedor">
     <div class="titulo">
-        <h1>¿QUIERES CASARTE CONMIGO?</h1>
+        <h1>¿QUIERES SER MI NOVIA?</h1>
     </div>
     <div class="opciones">
-        <p class="p1">SI</p>
-        <p onclick="dijoSi()" class="p2">NO</p>
+        <p class="p1">NO</p>
+        <p onclick="dijoSi()" class="p2">SI</p>
         <div id="si">    
-                <img src="./asd.jpeg" width="70%">
-                <h2>Sabía qe dirías qe no :c pero aún así te TQM :*</h2>
+                <img src="https://paxdettoniserrano.com/wp-content/uploads/2017/07/rrr.jpg" width="70%">
+                <h2>Sabía que diras que SI. Feliz primer día de novios.</h2>
                 
         </div>
     </div>
