@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>matiqiu</title>
+    <meta charset="UTF-8">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        
+        background-image: url("./qiu.jpg");
+    }
+    .contenedor {
+        margin: auto;
+        width: 900px;
+        margin-top: 300px;
+        text-align: center;
+    }
+    .titulo{
+        margin-bottom: 20px;
+        background-color: rgb(211, 211, 211);
+    }
+    .opciones p {
+        background:blueviolet;
+        display: initial;
+        padding: 12px;
+        color: #ffffff;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+    p.p1 {
+        position: absolute;
+        top: 400px;
+        left: 500px;
+        width: 100px;
+    }
+    p.p2{
+        position: absolute;
+        top: 400px;
+        left: 800px;
+        width: 100px;
+    }
+    #si {
+        background: #515050;
+        left: 420px;position: absolute;
+        top: 122px;
+        width: 550px;
+        color: #ffffff;
+        padding: 50px;
+        display: none;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".p1").hover(function(){
+      arriba =  Math.random() * (400 - 1) + 1;
+      abajo =  Math.random() * (609 - 1) + 1;
+    $(this).css("top", arriba);
+    $(this).css("left", abajo);
+    });
+});
+function dijoSi(){
+    document.getElementById("si").style.display = "block";
+}
+</script>
+<body>
+<div class="contenedor">
+    <div class="titulo">
+        <h1>¿QUIERES SER MI NOVIA?</h1>
+    </div>
+    <div class="opciones">
+        <p class="p1">NO</p>
+        <p onclick="dijoSi()" class="p2">SI</p>
+        <div id="si">    
+                <img src="https://paxdettoniserrano.com/wp-content/uploads/2017/07/rrr.jpg" width="70%">
+                <h2>Sabía que diras que SI. Feliz primer día de novios.</h2>
+                
+        </div>
+    </div>
+</div>
+</body>
+</html>
